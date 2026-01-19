@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Shop - Authentic Korean Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Home Page */
+        .hero-banner {
+            background: linear-gradient(120deg, #ff6b9d 0%, #c06c84 50%, #6c5b7b 100%);
+            padding: 120px 40px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-banner::before {
+            content: '🇰🇷';
+            position: absolute;
+            font-size: 15em;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-banner h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease;
+        }
+        
+        .hero-banner p {
+            font-size: 1.6em;
+            margin-bottom: 35px;
+        }
+        
+        .hero-cta {
+            background: white;
+            color: #ff6b9d;
+            padding: 18px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .promo-strip {
+            background: #355c7d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-strip">
+        ⭐ NEW YEAR SALE: 25% OFF Storewide! Use Code: NEWYEAR25 ⭐
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🛍️ KOREAN SHOP</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">All Products</a></li>
+                <li><a href="beauty.html">K-Beauty</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>Discover Korea</h1>
+            <p>Authentic Korean Products Delivered to Your Door</p>
+            <a href="products.html" class="hero-cta">Start Shopping</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="categories-section">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-emoji">💄</div>
+                    <h3>K-Beauty</h3>
+                    <p>Skincare, makeup, and beauty essentials from top Korean brands</p>
+                    <a href="beauty.html" class="btn-link">Shop Now →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">👗</div>
+                    <h3>Fashion</h3>
+                    <p>Trendy Korean clothing and accessories for every style</p>
+                    <a href="fashion.html" class="btn-link">Shop Now →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🍜</div>
+                    <h3>Korean Food</h3>
+                    <p>Authentic snacks, instant noodles, and ingredients</p>
+                    <a href="food.html" class="btn-link">Shop Now →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🏠</div>
+                    <h3>Lifestyle</h3>
+                    <p>Home decor, stationery, and everyday essentials</p>
+                    <a href="lifestyle.html" class="btn-link">Shop Now →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">NEW</div>
+                    <img src="https://via.placeholder.com/280x280/ff6b9d/ffffff?text=Face+Cream" alt="Face Cream">
+                    <div class="product-info">
+                        <h3>Hydrating Face Cream</h3>
+                        <p class="product-category">K-Beauty</p>
+                        <p class="product-price">$38.99</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge sale">SALE</div>
+                    <img src="https://via.placeholder.com/280x280/c06c84/ffffff?text=Korean+Dress" alt="Dress">
+                    <div class="product-info">
+                        <h3>Floral Mini Dress</h3>
+                        <p class="product-category">Fashion</p>
+                        <p class="product-price">$45.99 <span class="old-price">$59.99</span></p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge hot">HOT</div>
+                    <img src="https://via.placeholder.com/280x280/6c5b7b/ffffff?text=Ramen+Pack" alt="Ramen">
+                    <div class="product-info">
+                        <h3>Spicy Ramen Variety Pack</h3>
+                        <p class="product-category">Food</p>
+                        <p class="product-price">$19.99</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/280x280/355c7d/ffffff?text=Notebook" alt="Notebook">
+                    <div class="product-info">
+                        <h3>Minimalist Notebook Set</h3>
+                        <p class="product-category">Lifestyle</p>
+                        <p class="product-price">$14.99</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <h2 class="section-title">Why Shop With Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-box">
+                    <div class="benefit-icon">✓</div>
+                    <h3>100% Authentic</h3>
+                    <p>All products imported directly from South Korea</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Free Shipping</h3>
+                    <p>On orders over $50 worldwide</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-icon">💯</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with regular sales</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>Free Samples</h3>
+                    <p>Complimentary samples with every order</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Korean Shop</h3>
+                <p>Your one-stop destination for authentic Korean products. Quality guaranteed since 2019.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="beauty.html">K-Beauty</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Korean Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
