@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Korean Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Contact Page */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.2);
+        }
+        
+        .contact-emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        @media (max-width: 968px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🛍️ KOREAN SHOP</div>
+            <ul class="nav-menu">
+                <li><a href="shop.html">Home</a></li>
+                <li><a href="products.html">All Products</a></li>
+                <li><a href="beauty.html">K-Beauty</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p style="text-align: center; color: #636e72; font-size: 1.2em; max-width: 700px; margin: 0 auto 50px;">
+            Have questions or need help? We're here for you! Send us a message and we'll respond within 24 hours.
+        </p>
+
+        <div class="contact-layout">
+            <div class="content-section">
+                <h3 style="color: #ff6b9d; margin-bottom: 30px; font-size: 2em;">Send Us a Message</h3>
+                
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label>Subject *</label>
+                    <select required>
+                        <option value="">Choose a subject</option>
+                        <option value="order">Order Status</option>
+                        <option value="product">Product Question</option>
+                        <option value="shipping">Shipping Inquiry</option>
+                        <option value="return">Returns & Exchanges</option>
+                        <option value="payment">Payment Issue</option>
+                        <option value="wholesale">Wholesale Inquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Order Number (if applicable)</label>
+                    <input type="text" placeholder="e.g., KS123456">
+                </div>
+
+                <div class="form-group">
+                    <label>Your Message *</label>
+                    <textarea rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
+
+                <button class="submit-btn" style="width: 100%;">Send Message</button>
+
+                <p style="margin-top: 20px; color: #b2bec3; font-size: 0.95em; text-align: center;">
+                    We typically respond within 24 hours during business days.
+                </p>
+            </div>
+
+            <div>
+                <div class="contact-card">
+                    <span class="contact-emoji">📧</span>
+                    <h3 style="color: #2d3436; margin-bottom: 15px; font-size: 1.6em;">Email Us</h3>
+                    <p style="color: #636e72; font-size: 1.1em; margin-bottom: 10px;">support@koreanshop.com</p>
+                    <p style="color: #b2bec3;">Response time: 24 hours</p>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-emoji">📞</span>
+                    <h3 style="color: #2d3436; margin-bottom: 15px; font-size: 1.6em;">Call Us</h3>
+                    <p style="color: #636e72; font-size: 1.1em; margin-bottom: 10px;">+1 (800) KOREAN-1</p>
+                    <p style="color: #b2bec3;">Mon-Fri: 9AM - 7PM EST<br>Sat: 10AM - 5PM EST</p>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-emoji">💬</span>
+                    <h3 style="color: #2d3436; margin-bottom: 15px; font-size: 1.6em;">Live Chat</h3>
+                    <p style="color: #636e72; font-size: 1.1em; margin-bottom: 10px;">Instant help available</p>
+                    <p style="color: #b2bec3;">Available during business hours</p>
+                    <button class="btn-add-cart" style="margin-top: 15px; width: 80%;">Start Chat</button>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-emoji">📍</span>
+                    <h3 style="color: #2d3436; margin-bottom: 15px; font-size: 1.6em;">Visit Us</h3>
+                    <p style="color: #636e72; font-size: 1.1em;">789 K-Culture Avenue<br>Los Angeles, CA 90001<br>United States</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%); padding: 35px; border-radius: 20px; color: white; text-align: center;">
+                    <h3 style="margin-bottom: 20px; font-size: 1.6em;">Follow Us</h3>
+                    <p style="margin-bottom: 25px;">Stay updated with new arrivals and exclusive deals!</p>
+                    <div style="display: flex; justify-content: center; gap: 20px; font-size: 2.5em;">
+                        <a href="#" style="color: white;">📘</a>
+                        <a href="#" style="color: white;">📷</a>
+                        <a href="#" style="color: white;">🐦</a>
+                        <a href="#" style="color: white;">📌</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" style="margin-top: 60px;">
+            <h3 style="color: #ff6b9d; text-align: center; font-size: 2em;">Frequently Asked Questions</h3>
+            <div style="margin-top: 35px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #2d3436; font-size: 1.3em; margin-bottom: 10px;">❓ How long does shipping take?</h4>
+                    <p>Standard shipping takes 5-7 business days within the US. International shipping varies by location (typically 10-21 business days). Express shipping is available for faster delivery.</p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #2d3436; font-size: 1.3em; margin-bottom: 10px;">❓ Do you ship internationally?</h4>
+                    <p>Yes! We ship to over 100 countries worldwide. Shipping costs and delivery times vary by destination. International orders over $100 qualify for free shipping.</p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #2d3436; font-size: 1.3em; margin-bottom: 10px;">❓ What's your return policy?</h4>
+                    <p>We accept returns within 30 days of delivery for unopened items in original packaging. Opened beauty products can only be exchanged if defective. See our full return policy for details.</p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #2d3436; font-size: 1.3em; margin-bottom: 10px;">❓ Are all products authentic?</h4>
+                    <p>Absolutely! All our products are sourced directly from official Korean distributors and manufacturers. We guarantee 100% authenticity on every item we sell.</p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #2d3436; font-size: 1.3em; margin-bottom: 10px;">❓ Do you offer wholesale pricing?</h4>
+                    <p>Yes! We offer wholesale pricing for bulk orders. Please contact us at wholesale@koreanshop.com with your business information and we'll send you our wholesale catalog and pricing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Korean Shop</h3>
+                <p>Your one-stop destination for authentic Korean products. Quality guaranteed since 2019.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="beauty.html">K-Beauty</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Korean Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
